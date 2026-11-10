@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navalhas Barber Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #0b0b0b; color: #f3f3f3; font-family: sans-serif; }
+        .gold-text { color: #d4af37; }
+        .gold-bg { background-color: #d4af37; }
+        .gold-border { border-color: #d4af37; }
+    </style>
+</head>
+<body class="bg-black text-gray-100">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-black/90 border-b border-gray-800 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-widest gold-text">NAVALHAS</span>
+                <span class="text-xs uppercase tracking-wider text-gray-400">Barber Shop</span>
+            </div>
+            <a href="https://wa.me/5511960428501" target="_blank" class="gold-bg text-black font-semibold px-4 py-2 rounded-full text-sm hover:opacity-90 transition">
+                <i class="fab fa-whatsapp mr-1"></i> WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 px-4 text-center bg-gradient-to-b from-zinc-900 to-black">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-xs uppercase tracking-widest text-gold-text font-semibold">Penha, São Paulo</span>
+            <h1 class="text-4xl md:text-6xl font-serif font-bold mt-2 mb-4 leading-tight">Tradição na navalha, <span class="gold-text">estilo campeão.</span></h1>
+            <p class="text-gray-400 mb-8 text-lg">Cortes, barba e acabamentos com equipe de nível campeão. Agende em segundos pelo WhatsApp.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#agendar" class="gold-bg text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition">Agendar horário</a>
+                <a href="#servicos" class="border gold-border gold-text font-bold py-3 px-8 rounded-lg hover:bg-zinc-900 transition">Ver serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- História -->
+    <section id="historia" class="py-16 px-4 max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl font-serif font-bold mb-6 gold-text">Nossa História</h2>
+        <p class="text-gray-300 leading-relaxed text-base mb-6">
+            A Navalhas nasceu do sonho de trazer para São Paulo a disciplina e o capricho de quem aprendeu o ofício cedo. Transformamos a barbearia em ponto de encontro na Penha, reunindo profissionais que respiram técnica e respeito pelo cliente. Nossa dedicação nos levou ao topo: conquista no campeonato Hair Brasil, prova de que cada degradê e cada barba alinhada aqui é feito com nível de competição.
+        </p>
+    </section>
+
+    <!-- Serviços & Preços -->
+    <section id="servicos" class="py-16 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-serif font-bold text-center mb-10 gold-text">Serviços e Preços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 flex justify-between items-center">
+                <div><h3 class="font-bold text-lg">Corte Masculino</h3><p class="text-xs text-gray-400">Tesoura e/ou máquina</p></div>
+                <span class="gold-text font-bold">R$ 45,00</span>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 flex justify-between items-center">
+                <div><h3 class="font-bold text-lg">Degradê / Fade</h3><p class="text-xs text-gray-400">Low, mid ou high fade</p></div>
+                <span class="gold-text font-bold">R$ 50,00</span>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 flex justify-between items-center">
+                <div><h3 class="font-bold text-lg">Barba Completa</h3><p class="text-xs text-gray-400">Toalha quente e navalha</p></div>
+                <span class="gold-text font-bold">R$ 35,00</span>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-xl border border-zinc-800 flex justify-between items-center">
+                <div><h3 class="font-bold text-lg">Corte + Barba</h3><p class="text-xs text-gray-400">O clássico da casa</p></div>
+                <span class="gold-text font-bold">R$ 75,00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento WhatsApp -->
+    <section id="agendar" class="py-16 px-4 bg-zinc-950 border-t border-zinc-900">
+        <div class="max-w-xl mx-auto bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-xl">
+            <h2 class="text-2xl font-serif font-bold text-center mb-2 gold-text">Reserve pelo WhatsApp</h2>
+            <p class="text-center text-sm text-gray-400 mb-6">Preencha os dados abaixo. O sistema monta a mensagem pronta para o nosso WhatsApp.</p>
+            
+            <form id="whatsappForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider mb-1 text-gray-400">Seu Nome</label>
+                    <input type="text" id="clientName" required placeholder="Ex: Carlos Silva" class="w-full bg-black border border-zinc-700 rounded-lg p-3 text-white focus:outline-none focus:border-yellow-500">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider mb-1 text-gray-400">Serviço Desejado</label>
+                    <select id="clientService" class="w-full bg-black border border-zinc-700 rounded-lg p-3 text-white focus:outline-none focus:border-yellow-500">
+                        <option value="Corte Masculino - R$ 45,00">Corte Masculino - R$ 45,00</option>
+                        <option value="Degradê / Fade - R$ 50,00">Degradê / Fade - R$ 50,00</option>
+                        <option value="Barba Completa - R$ 35,00">Barba Completa - R$ 35,00</option>
+                        <option value="Corte + Barba - R$ 75,00">Corte + Barba - R$ 75,00</option>
+                    </select>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider mb-1 text-gray-400">Data</label>
+                        <input type="date" id="clientDate" required class="w-full bg-black border border-zinc-700 rounded-lg p-3 text-white focus:outline-none focus:border-yellow-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider mb-1 text-gray-400">Horário</label>
+                        <input type="time" id="clientTime" required class="w-full bg-black border border-zinc-700 rounded-lg p-3 text-white focus:outline-none focus:border-yellow-500">
+                    </div>
+                </div>
+                <button type="submit" class="w-full gold-bg text-black font-bold py-4 rounded-lg mt-4 hover:opacity-90 transition flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-xl"></i> Solicitar pelo WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-gray-500 border-t border-zinc-900">
+        <p class="font-bold text-gray-400 mb-1">Penha, São Paulo - (11) 96042-8501</p>
+        <p>&copy; 2026 Navalhas Barber Shop. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('clientName').value;
+            const service = document.getElementById('clientService').value;
+            const date = document.getElementById('clientDate').value;
+            const time = document.getElementById('clientTime').value;
+
+            const text = `Olá, Navalhas Barber Shop! ✂️\nGostaria de agendar um horário:\n\n👤 *Nome:* ${name}\n💈 *Serviço:* ${service}\n📅 *Data:* ${date}\n⏰ *Horário:* ${time}\n\nAguardo a confirmação. Obrigado!`;
+            const encodedText = encodeURIComponent(text);
+            window.open(`https://wa.me/5511960428501?text=${encodedText}`, '_blank');
+        });
+    </script>
+</body>
+</html>
