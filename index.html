@@ -31,22 +31,41 @@
     <!-- Hero Section -->
     <section class="relative py-20 px-4 text-center bg-gradient-to-b from-zinc-900 to-black">
         <div class="max-w-3xl mx-auto">
-            <span class="text-xs uppercase tracking-widest text-gold-text font-semibold">Penha, São Paulo</span>
+            <span class="text-xs uppercase tracking-widest text-gold-text font-semibold">Penha, São Paulo • Mais que corte, é estilo de vida.</span>
             <h1 class="text-4xl md:text-6xl font-serif font-bold mt-2 mb-4 leading-tight">Tradição na navalha, <span class="gold-text">estilo campeão.</span></h1>
-            <p class="text-gray-400 mb-8 text-lg">Cortes, barba e acabamentos com equipe de nível campeão. Agende em segundos pelo WhatsApp.</p>
+            <p class="text-gray-400 mb-8 text-lg">Cortes, barbas e atendimento de alto nível com campeões do Hair Brasil. Agende agora mesmo pelo WhatsApp.</p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#agendar" class="gold-bg text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition">Agendar horário</a>
-                <a href="#servicos" class="border gold-border gold-text font-bold py-3 px-8 rounded-lg hover:bg-zinc-900 transition">Ver serviços</a>
+                <a href="#agendar" class="gold-bg text-black font-bold py-3 px-8 rounded-lg shadow-lg hover:opacity-90 transition">Agendar Horário</a>
+                <a href="#galeria" class="border gold-border gold-text font-bold py-3 px-8 rounded-lg hover:bg-zinc-900 transition">Ver Trabalhos</a>
             </div>
         </div>
     </section>
 
-    <!-- História -->
-    <section id="historia" class="py-16 px-4 max-w-4xl mx-auto text-center">
-        <h2 class="text-2xl font-serif font-bold mb-6 gold-text">Nossa História</h2>
-        <p class="text-gray-300 leading-relaxed text-base mb-6">
-            A Navalhas nasceu do sonho de trazer para São Paulo a disciplina e o capricho de quem aprendeu o ofício cedo. Transformamos a barbearia em ponto de encontro na Penha, reunindo profissionais que respiram técnica e respeito pelo cliente. Nossa dedicação nos levou ao topo: conquista no campeonato Hair Brasil, prova de que cada degradê e cada barba alinhada aqui é feito com nível de competição.
-        </p>
+    <!-- Destaque / Conquistas -->
+    <section class="py-12 px-4 bg-zinc-950 border-y border-zinc-900">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-2xl font-serif font-bold gold-text mb-3">Somos Campeões no Campeonato Hair Brasil</h2>
+            <p class="text-gray-400 text-sm max-w-2xl mx-auto mb-8">Primeiro, segundo e terceiro lugar. Nosso profissionalismo e técnica colocam a Navalhas Barber Shop no topo do cenário de barbearia nacional.</p>
+        </div>
+    </section>
+
+    <!-- Galeria de Fotos / Trabalhos -->
+    <section id="galeria" class="py-16 px-4 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-serif font-bold text-center mb-10 gold-text">Nossos Trabalhos & Espaço</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Corte e Barba" class="w-full h-64 object-cover">
+                <div class="p-4"><h3 class="font-bold">Degradê com Acabamento Perfeito</h3><p class="text-xs text-gray-400">Estilo moderno e alinhado na navalha.</p></div>
+            </div>
+            <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Barba Estilizada" class="w-full h-64 object-cover">
+                <div class="p-4"><h3 class="font-bold">Barba Completa com Toalha Quente</h3><p class="text-xs text-gray-400">Tratamento e hidratação profunda.</p></div>
+            </div>
+            <div class="bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800">
+                <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Equipe Navalhas" class="w-full h-64 object-cover">
+                <div class="p-4"><h3 class="font-bold">Nossa Equipe</h3><p class="text-xs text-gray-400">Profissionais experientes e especializados.</p></div>
+            </div>
+        </div>
     </section>
 
     <!-- Serviços & Preços -->
@@ -76,7 +95,7 @@
     <section id="agendar" class="py-16 px-4 bg-zinc-950 border-t border-zinc-900">
         <div class="max-w-xl mx-auto bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-xl">
             <h2 class="text-2xl font-serif font-bold text-center mb-2 gold-text">Reserve pelo WhatsApp</h2>
-            <p class="text-center text-sm text-gray-400 mb-6">Preencha os dados abaixo. O sistema monta a mensagem pronta para o nosso WhatsApp.</p>
+            <p class="text-center text-sm text-gray-400 mb-6">Preencha os dados abaixo para agendar direto com a nossa barbearia.</p>
             
             <form id="whatsappForm" class="space-y-4">
                 <div>
@@ -103,7 +122,7 @@
                     </div>
                 </div>
                 <button type="submit" class="w-full gold-bg text-black font-bold py-4 rounded-lg mt-4 hover:opacity-90 transition flex items-center justify-center gap-2">
-                    <i class="fab fa-whatsapp text-xl"></i> Solicitar pelo WhatsApp
+                    <i class="fab fa-whatsapp text-xl"></i> Agendar pelo WhatsApp
                 </button>
             </form>
         </div>
@@ -111,7 +130,7 @@
 
     <!-- Footer -->
     <footer class="py-8 text-center text-xs text-gray-500 border-t border-zinc-900">
-        <p class="font-bold text-gray-400 mb-1">Penha, São Paulo - (11) 96042-8501</p>
+        <p class="font-bold text-gray-400 mb-1">Penha, São Paulo • WhatsApp: (11) 96042-8501</p>
         <p>&copy; 2026 Navalhas Barber Shop. Todos os direitos reservados.</p>
     </footer>
 
